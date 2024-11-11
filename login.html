@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>LOGIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    /* Agregar la imagen de fondo al body */
+    body {
+      background-image: url(./HospitalPosadas/imagenes/portada.jpg); /* Reemplaza con tu propia URL de imagen */
+      background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+      background-position: center; /* Centra la imagen */
+      background-attachment: fixed; /* Fija la imagen mientras se desplaza el contenido */
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* Hace que el body ocupe toda la altura de la pantalla */
+      margin: 0; /* Elimina el margen por defecto */
+    }
+
+    .custom-header {
+      background-color: rgba(21, 69, 100, 0.7); /* Fondo con algo de transparencia */
+    }
+
+    .color-button {
+      background-color: #1c98ed;
+      color: white;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .color-button:hover {
+      background-color: #1478b7; /* Color más oscuro para el hover */
+    }
+
+    header img {
+      width: 70px; /* Ajusta el tamaño según prefieras */
+      height: auto;
+      margin: 10px;
+      vertical-align: middle; /* Alinea verticalmente con el texto */
+    }
+
+    header h1 {
+      font-size: 2.0em; /* Reduce el tamaño del texto */
+      display: inline-block;
+      margin: 0; /* Elimina márgenes adicionales */
+    }
+
+    /* Centrar el contenedor del formulario */
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1; /* Hace que este contenedor ocupe el espacio restante */
+    }
+
+    .form-wrapper {
+      width: 100%;
+      max-width: 500px; /* Limita el tamaño máximo del formulario */
+      margin: 0 auto; /* Centra el formulario */
+    }
+
+    /* Centrar los botones en columna */
+    .button-container {
+      display: flex;
+      flex-direction: column; /* Alinea los botones en columna */
+      align-items: center; /* Centra los botones horizontalmente */
+    }
+
+    /* Agregar transparencia al formulario */
+    .color-form {
+      background-color: rgba(2, 33, 53, 0.8); /* Fondo con transparencia */
+      color: white;
+      border-radius: 10px; /* Redondear las esquinas */
+      padding: 20px;
+    }
+
+    .w3-button {
+      width: 100%; /* Hace que los botones ocupen todo el ancho del contenedor */
+    }
+
+    /* Estilo para el pie de página */
+    footer {
+      background-color: rgba(21, 69, 100, 0.7); /* Fondo con transparencia */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+    }
+
+</style>
+<body>
+
+<header class="w3-container custom-header">
+    <img src="./HospitalPosadas/imagenes/icono.jpg" alt="">
+    <h1 class="w3-text-white">Hospital Nacional Profesor Alejandro Posadas</h1>
+</header>
+
+<!-- Contenedor centrado para el formulario -->
+<div class="form-container">
+  <div class="form-wrapper">
+    <form class="w3-container w3-card-4 color-form">
+
+      <p>
+        <label>Numero de DNI</label>
+        <input class="w3-input" type="text" style="width:90%" required placeholder="Ingrese su DNI">
+      </p>
+      <p>
+        <label>Contrasena</label>
+        <input class="w3-input" type="password" style="width:90%" required placeholder="Ingrese Su contraseña">
+      </p>
+
+      <p>
+        <input id="milk" class="w3-check" type="checkbox" checked="checked">
+        <label>Mantener mi Sesion iniciada</label>
+      </p>
+
+      <!-- Contenedor para los botones, alineados en columna -->
+      <div class="button-container">
+        <p>
+          <button class="w3-btn color-button">Iniciar Sesion</button>
+        </p>
+        <p>
+          <button class="w3-btn color-button">Registrarse  </button>
+        </p>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<!-- Pie de página -->
+<footer>
+  <p>&copy; 2024 Hospital Nacional Profesor Alejandro Posadas. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
